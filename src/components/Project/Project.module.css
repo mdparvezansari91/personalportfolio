@@ -1,0 +1,33 @@
+.heading{
+    text-align: center;
+    font-size: 50px;
+}
+
+.title{
+    font-weight: bold;
+}
+
+.projectdiv a{
+    color: rgb(13, 22, 186);
+    font-weight: bold;
+}
+
+.projectdiv{
+    display: flex;
+    padding: 20px;
+    padding-bottom: 50px;
+    gap: 40px;
+
+}
+
+.box{
+    box-shadow: 10px 10px 5px lightblue;
+    padding: 20px;
+    transition: 1s ease-in-out;
+    border-radius: 10px;
+
+}
+.box:hover{
+    transform: scale(1.1);
+    background-color: rgb(177, 111, 235);
+}

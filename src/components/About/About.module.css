@@ -1,0 +1,32 @@
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #ba1d98;
+}
+.text:hover{
+    cursor: pointer;
+}
+
+.container{
+    background-color: #C4DFE6;
+    padding-top: 10px;
+    box-shadow: 10px 90px 40px rgb(152, 159, 161) inset;
+}
+
+.skills{
+    cursor: pointer;
+    padding: 100px;
+    font-size: larger;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.skills ul{
+    display: flex;
+    gap: 100px;
+    font-family: serif;
+    font-size: x-large;
+    
+}

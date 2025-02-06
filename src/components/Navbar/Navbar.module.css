@@ -1,0 +1,45 @@
+.maindiv {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space between logo, menu, and right div */
+    padding: 10px 20px; /* Add some padding */
+    background-color: #f8f9fa; /* Light background color */
+    border-bottom: 1px solid #dee2e6; /* Optional: border at the bottom */
+}
+
+.logo {
+    /* Add styles for the logo if needed */
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo:hover{
+    color: #007bff;
+    cursor: pointer;
+}
+.menuContainer {
+    flex-grow: 1; /* Allow this div to grow and take available space */
+    display: flex;
+    justify-content: center; /* Center the menu horizontally */
+}
+
+.menu {
+    display: flex; /* Use flexbox for the menu items */
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.menuItem {
+    margin: 0 15px; /* Add horizontal spacing between menu items */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.menuItem:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    color: #294f7f; /* Change color on hover */
+    
+}
+
+.rightDiv {
+    background-color: aquamarine;
+}
