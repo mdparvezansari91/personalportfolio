@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mohammad Ansaei",
+  title: "Mohammad Ansari",
   description: "Web App Developer",
 };
 
