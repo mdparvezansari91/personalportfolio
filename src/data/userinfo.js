@@ -49,7 +49,7 @@ const userInfo = {
         {
             title: "Shop and Blog Platform",
             description: "Developed an article publishing platform with API integrations and MongoDB. Implemented auto-publishing using Next.js.",
-            url: "/",
+            url: "https://shopnblog.online/",
         }
     ],
     education: [
