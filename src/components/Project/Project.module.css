@@ -31,3 +31,18 @@
     transform: scale(1.1);
     background-color: rgb(177, 111, 235);
 }
+
+@media (max-width:768px) {
+    .projectdiv{
+        display: block;
+    }
+    
+    
+}
+
+@media (max-width:480px) {
+.projectdiv{
+    display: block;
+}
+    
+}

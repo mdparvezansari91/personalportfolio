@@ -8,14 +8,15 @@
 }
 
 .logo {
-    /* Add styles for the logo if needed */
     font-size: 24px;
     font-weight: bold;
 }
-.logo:hover{
+
+.logo:hover {
     color: #007bff;
     cursor: pointer;
 }
+
 .menuContainer {
     flex-grow: 1; /* Allow this div to grow and take available space */
     display: flex;
@@ -37,9 +38,46 @@
 .menuItem:hover {
     cursor: pointer; /* Change cursor to pointer on hover */
     color: #294f7f; /* Change color on hover */
-    
 }
 
 .rightDiv {
     background-color: aquamarine;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .maindiv {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .menuContainer {
+        justify-content: flex-start; /* Align menu to the left */
+        width: 100%; /* Full width for the menu */
+    }
+
+    .menu {
+        flex-direction: column; /* Stack menu items vertically */
+        width: 100%; /* Full width for the menu */
+    }
+
+    .menuItem {
+        margin: 10px 0; /* Vertical spacing for menu items */
+        text-align: center; /* Center text for mobile */
+    }
+
+    .rightDiv {
+        width: 100%; /* Full width for the right div */
+        text-align: center; /* Center text for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px; /* Smaller logo font size for mobile */
+    }
+
+    .menuItem {
+        margin: 5px 0; /* Reduce spacing for smaller screens */
+    }
 }
