@@ -8,9 +8,10 @@ import Skills from "@/components/Skills/Skills";
 
 
 export default function Home() {
+  
   return (
     <>
-    <Navbar/>
+    <Navbar />
     <HeroSection/>
     <Skills/>
     <About/>

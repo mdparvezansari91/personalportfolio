@@ -1,6 +1,8 @@
+'use client'
 import Styles from "./Navbar.module.css";
 
 const Navbar = () => {
+  
     return (
         <div className={Styles.maindiv}>
             <div className={Styles.logo}>Logo</div>
