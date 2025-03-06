@@ -1,48 +1,106 @@
-.heading{
+.projectcontainer {
+    background: radial-gradient(rgb(7, 7, 7), rgb(0, 0, 0));
+    color: aliceblue;
+    padding-top: 40px;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.heading {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    font-size: 50px;
+    font-size: 5rem; /* Adjusted for better responsiveness */
+    margin-bottom: 20px; /* Added margin for spacing */
+    text-shadow: 3px 3px 5px pink;
+    
+
 }
 
-.title{
+.title {
     font-weight: bold;
+    font-size: 2.5rem; /* Adjusted for better responsiveness */
+    margin-bottom: 10px; /* Added margin for spacing */
 }
 
-.projectdiv a{
-    color: rgb(13, 22, 186);
-    font-weight: bold;
-}
-
-.projectdiv{
-    display: flex;
-    padding: 20px;
-    padding-bottom: 50px;
-    gap: 40px;
-
-}
-
-.box{
-    box-shadow: 10px 10px 5px lightblue;
-    padding: 20px;
-    transition: 1s ease-in-out;
+.projectdiv a {
     border-radius: 10px;
-
+    background: black;
+    width: max-content;
+    padding: 10px 20px 10px 20px;
+    color: rgb(237, 238, 241);
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
 }
-.box:hover{
-    transform: scale(1.1);
-    background-color: rgb(177, 111, 235);
+
+.projectdiv a:hover {
+    color: rgb(0, 102, 204); /* Change color on hover */
 }
 
-@media (max-width:768px) {
-    .projectdiv{
-        display: block;
+.box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    border-radius: 10px;
+    padding: 20px; /* Increased padding for better spacing */
+    margin: 20px; /* Increased margin for better spacing */
+    position: relative;
+    background: rgba(255, 255, 255, 0.1); /* Added background for better contrast */
+    backdrop-filter: blur(10px); /* Added blur effect */
+    height: 400px; /* Set a fixed height for the box */
+}
+
+.textContainer {
+    flex: 1; /* Allow the text container to grow */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out the title, description, and link */
+}
+
+.imageContainer {
+    position: relative;
+    width: 500px; /* Set a fixed width for the image */
+    height: 300px; /* Set a fixed height for the image */
+    overflow: hidden; /* Hide overflow to maintain the container size */
+}
+
+.imageContainer img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect on hover */
+}
+
+@media (max-width: 768px) {
+    .projectdiv {
+        display: block; /* Stack items on smaller screens */
     }
-    
-    
 }
 
-@media (max-width:480px) {
-.projectdiv{
-    display: block;
+.title::after {
+    content: "";
+    display: block; /* Make it a block element */
+    background: royalblue;
+    height: 2px; /* Adjust height */
+    width: 60%; /* Full width */
+    margin-top: 5px; /* Space between title and line */
 }
-    
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 2.5rem; /* Adjusted for smaller screens */
+    }
+
+    .title
+    {
+        font-size: 2rem; /* Adjusted for smaller screens */
+    }
+
+    .box {
+        padding: 15px; /* Adjusted padding for smaller screens */
+        margin: 15px; /* Adjusted margin for smaller screens */
+        height: auto; /* Allow height to adjust on smaller screens */
+    }
 }

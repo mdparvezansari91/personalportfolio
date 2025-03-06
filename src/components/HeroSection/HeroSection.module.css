@@ -1,9 +1,101 @@
-.background{
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    padding: 100px;
+
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
 }
+
+
+
+
+
+
+
+
+
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%; /* Start position */
+  }
+  50% {
+      background-position: 100% 50%; /* Mid position */
+  }
+  100% {
+      background-position: 100% 50%; /* End position */
+  }
+}
+
+.background {
+  background-color: #f0f0f0; /* Fallback color */
+  position: relative;
+  color: aliceblue;
+  font-size: 2.6rem;
+  text-shadow: 3px 1px 20px pink;
+  font-style: italic;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  height: 100vh;
+  background: radial-gradient(rgb(7, 7, 7), rgb(50, 50, 60));
+  background-size: 400% 400%; /* Increase size for smooth animation */
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  border: 2px solid black;
+  animation: gradientAnimation 7s ease-in-out infinite; /* Animation duration and easing */
+}
+
+.nextjs{
+  animation: skillspan 4s;
+
+}
+
+.mongodb{
+  animation: skillspan 5s;
+
+}
+
+.react{
+  animation: skillspan 7s;
+
+}
+
+
+.h1{
+   animation: slide-in 2s ;
+}
+
+@keyframes skillspan {
+  from {
+    transform: translatex(-10%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+  
+}
+
+
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+  
+    to {
+      transform: translateX(0%);
+    }
+  }
+  
 
 @media (max-width:768px) {
 

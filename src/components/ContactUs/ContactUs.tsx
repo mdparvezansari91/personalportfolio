@@ -44,7 +44,7 @@ const ContactUs = () => {
     };
 
     return (
-        <div className={styles.container}>
+        <div id="contactus" className={styles.container}>
             <div className={styles.leftDiv}>
                 <div>
                     <FaRocketchat className="size-9" />

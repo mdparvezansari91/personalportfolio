@@ -1,11 +1,22 @@
+
 .maindiv {
+    position: sticky;
+    top: 0;
+    z-index: 1;
     display: flex;
     align-items: center; /* Vertically center items */
     justify-content: space-between; /* Space between logo, menu, and right div */
     padding: 10px 20px; /* Add some padding */
-    background-color: #f8f9fa; /* Light background color */
+    background: linear-gradient(to right, black, black, black);
+    background-color: #090909; /* Light background color */
+     color: aliceblue;
     border-bottom: 1px solid #dee2e6; /* Optional: border at the bottom */
 }
+
+.logo h1{
+    text-shadow: 1px 2px 5px pink;
+}
+
 
 .logo {
     font-size: 24px;
@@ -28,6 +39,8 @@
     list-style: none; /* Remove default list styles */
     padding: 0; /* Remove default padding */
     margin: 0; /* Remove default margin */
+    font-size: x-large;
+    font-weight: 500;
 }
 
 .menuItem {

@@ -1,0 +1,33 @@
+.centerdiv {
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    position: relative;
+    border-radius: 50%; /* Optional: for a circular look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.revolvingbutton {
+    width: 100px;
+    height: 40px;
+    background-color: aqua;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: -100px; /* Adjust based on desired distance from center */
+    animation: revolve 5s linear infinite;
+}
+
+@keyframes revolve {
+    from {
+        transform: rotate(0deg) translateX(100px) rotate(0deg); /* Adjust distance */
+    }
+    to {
+        transform: rotate(360deg) translateX(100px) rotate(0deg); /* Adjust distance */
+    }
+}

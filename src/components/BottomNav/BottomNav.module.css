@@ -1,0 +1,31 @@
+.container{
+    /* background-image: url("/pexels-thelazyartist-1201673.jpg"); */
+    /* background-color: #F52549; */
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 2.7rem;
+    text-shadow: 1px 0 3px var(--customcolur4);
+}
+
+
+.menu ul{
+    display: flex;
+    gap: 60px;
+    font-size: 2.5rem;
+    transition: 0.5s;
+
+}
+
+.menu ul li:hover{
+color: var(--customcolur3);
+transform: scale(1.2);
+transition: 0.5s;
+}
+
+
+
+.contactus{
+    display: flex;
+}

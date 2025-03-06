@@ -34,21 +34,25 @@ const userInfo = {
         {
             title: "Careem Clone",
             description: "Developed a frontend clone of Careem using React. Deployed on Render.",
-            url:"/"
+            image:"/images/careemsnapshot.PNG",
+            url:"https://careem-clone-six.vercel.app/"
         },
         {
             title: "Portfolio Website",
             description: "Showcased expertise and past projects. Deployed on Render.",
+            image:"/images/personalportfolio.PNG",
             url: "/"
         },
         {
-            title: "Mobile Repair Appointment System",
-            description: "Built a comprehensive appointment management app with React, Node.js, and MongoDB. Deployed on Render.",
+            title: "Website for Manufacturing Company",
+            description: "Built a responsive website for manufactring industry.",
+            image:"/images/mgenterprisesnapshot.PNG",
             url: "/"
         },
         {
             title: "Shop and Blog Platform",
             description: "Developed an article publishing platform with API integrations and MongoDB. Implemented auto-publishing using Next.js.",
+            image:"/images/shopnblog.PNG",
             url: "https://shopnblog.online/",
         }
     ],
